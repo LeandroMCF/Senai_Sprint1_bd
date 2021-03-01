@@ -16,4 +16,3 @@ SELECT IdUsuario AS Id, Usuario.Nome, Email, Permissao AS Permissão FROM Usuario
 INNER JOIN Permissao
 ON Usuario.IdPermissao = Permissao.IdPermissao;
 
-SELECT 

@@ -4,6 +4,8 @@ ALTER TABLE Permissao DROP COLUMN Comum;
 
 ALTER TABLE Permissao DROP COLUMN Adimistrador;
 
+DROP TABLE Usuario;
+
 ALTER TABLE Permissao ADD Permissao VARCHAR(200) NOT NULL;
 
 INSERT INTO Permissao	(Permissao)

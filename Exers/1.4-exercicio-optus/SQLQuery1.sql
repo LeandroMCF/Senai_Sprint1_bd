@@ -37,7 +37,6 @@ CREATE TABLE Usuario
 (
 	IdUsuario		INT PRIMARY KEY IDENTITY,
 	IdPermissao		INT FOREIGN KEY REFERENCES Permissao (IdPermissao),
-	IdAlbum			INT FOREIGN KEY REFERENCES Album (IdAlbum),
 	Email			VARCHAR(200) NOT NULL,
 	Senha			VARCHAR(200) NOT NULL,
 	Nome			VARCHAR(200) NOT NULL,
