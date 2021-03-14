@@ -1,0 +1,61 @@
+--DDL
+
+CREATE DATABASE Gufi
+GO
+
+USE Gufi
+GO
+
+CREATE TABLE TipoUsers
+(
+	IdTipoUsers			INT PRIMARY KEY IDENTITY,
+	TituloTipoUser		VARCHAR(200) UNIQUE NOT NULL
+);
+GO
+
+CREATE TABLE Users
+(
+	IdUsers				INT PRIMARY KEY IDENTITY,
+	IdTipoUsers			INT FOREIGN KEY REFERENCES TipoUsers (IdTipoUsers),
+	NomeUsers			VARCHAR(200) NOT NULL,
+	Email				VARCHAR(200) UNIQUE NOT NULL,
+	Senha				VARCHAR(200) NOT NULL
+);
+GO
+
+CREATE TABLE Instituicoes
+(
+	IdInstituicoes		INT PRIMARY KEY IDENTITY,
+	cnpj				CHAR(14) UNIQUE NOT NULL,
+	NomeFantasia		VARCHAR(200) NOT NULL,
+	Endereco			VARCHAR(250) UNIQUE NOT NULL
+);
+GO
+
+CREATE TABLE TiposEventos
+(
+	IdTipoEventos		INT PRIMARY KEY IDENTITY,
+	TituloTipoEventos	VARCHAR(200) UNIQUE NOT NULL
+);
+GO
+
+CREATE TABLE Eventos
+(
+	IdEventos			INT PRIMARY KEY IDENTITY,
+	IdTipoEventos		INT FOREIGN KEY REFERENCES TiposEventos (IdTipoEventos),
+	IdInstituicoes		INT FOREIGN KEY REFERENCES Instituicoes (IdInstituicoes),
+	NomeEvento			VARCHAR(250) NOT NULL,
+	AcessoLivre			BIT DEFAULT (1),
+	DataEvento			DATE NOT NULL,
+	Descricao			VARCHAR(255)
+);
+GO
+
+CREATE TABLE Presencas
+(
+	IdPresenca			INT PRIMARY KEY IDENTITY,
+	IdUsers				INT FOREIGN KEY REFERENCES Users (IdUsers),
+	IdEventos			INT FOREIGN KEY REFERENCES Eventos (IdEventos),
+	Situacao			VARCHAR(250) NOT NULL
+)
+GO
