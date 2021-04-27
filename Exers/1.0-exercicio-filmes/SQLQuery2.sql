@@ -2,7 +2,7 @@ USE Filmes;
 
 SELECT * FROM Generos;
 
- 
+SELECT * FROM Usuarios;
 
 SELECT * FROM Filmes;
 
@@ -24,3 +24,6 @@ ON Filmes.IdGenero = Generos.IdGenero;
 SELECT IdFilme, Titulo AS Filmes, Nome AS Generos FROM Filmes
 RIGHT JOIN Generos
 ON Filmes.IdGenero = Generos.IdGenero;
+
+SELECT IdUsuario, Email, Senha, Permissoes FROM Usuarios 
+WHERE Email = 'adm@adm.com' AND Senha = 'adm123';

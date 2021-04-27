@@ -1,5 +1,10 @@
 USE Hroads;
 
+SELECT TipoUsuarios.TipoUsuarios, Usuarios.Email, Usuarios.Nome, Usuarios.Senha
+FROM Usuarios
+INNER JOIN TipoUsuarios
+ON TipoUsuarios.IdTipoUsuarios = Usuarios.IdTipoUsuarios;
+
 SELECT IdPersonagens AS ID, Nome FROM Personagens;
 
 
@@ -15,7 +20,7 @@ SELECT IdHabilidades AS ID, Habilidades FROM Habilidades;
 SELECT IdTipoHabilidades AS ID, TipoHabilidades AS Tipos_de_Habilidades FROM TipoHabilidades;
 
 
-SELECT COUNT(DISTINCT Habilidades) FROM Habilidades;
+SELECT COUNT(DISTINCT Habilidades) AS 'Quant Habilidade' FROM Habilidades;
 
 
 SELECT IdHabilidades AS ID FROM Habilidades;
