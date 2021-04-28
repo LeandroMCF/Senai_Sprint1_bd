@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OEJcI4+KB2xbTGK2yRXQ2yICe+avuHLFZRoITuP6pnfd/pgmkkDUipogZ0UwCJx2JFQS41BxNiimEIdOBwExjQ==",
+  "dgSpecHash": "BeDhqG3RG5lX8dRTEbZtBN+epFYiw4Oww5m+dXPHJXpBjUXwQY/nVvEv0gcWTeELF9I5JZts22bfIjVBkEIPsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leand\\source\\repos\\Hroads\\Hroads\\Hroads.csproj",
+  "projectFilePath": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Senai\\Senai_Sprint1_bd\\Desafios\\HROADS\\Hroads\\Hroads\\Hroads.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leand\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\leand\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.5\\microsoft.aspnetcore.authentication.jwtbearer.5.0.5.nupkg.sha512",

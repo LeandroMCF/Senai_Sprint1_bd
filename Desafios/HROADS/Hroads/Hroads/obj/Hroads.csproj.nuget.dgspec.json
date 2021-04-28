@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leand\\source\\repos\\Hroads\\Hroads\\Hroads.csproj": {}
+    "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Senai\\Senai_Sprint1_bd\\Desafios\\HROADS\\Hroads\\Hroads\\Hroads.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leand\\source\\repos\\Hroads\\Hroads\\Hroads.csproj": {
+    "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Senai\\Senai_Sprint1_bd\\Desafios\\HROADS\\Hroads\\Hroads\\Hroads.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leand\\source\\repos\\Hroads\\Hroads\\Hroads.csproj",
+        "projectUniqueName": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Senai\\Senai_Sprint1_bd\\Desafios\\HROADS\\Hroads\\Hroads\\Hroads.csproj",
         "projectName": "Hroads",
-        "projectPath": "C:\\Users\\leand\\source\\repos\\Hroads\\Hroads\\Hroads.csproj",
+        "projectPath": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Senai\\Senai_Sprint1_bd\\Desafios\\HROADS\\Hroads\\Hroads\\Hroads.csproj",
         "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leand\\source\\repos\\Hroads\\Hroads\\obj\\",
+        "outputPath": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Senai\\Senai_Sprint1_bd\\Desafios\\HROADS\\Hroads\\Hroads\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",

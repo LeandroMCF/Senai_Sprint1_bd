@@ -24,6 +24,7 @@ namespace Hroads.Contexts
         public virtual DbSet<TipoHabilidade> TipoHabilidades { get; set; }
         public virtual DbSet<TipoUsuario> TipoUsuarios { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
+        public object Class { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
