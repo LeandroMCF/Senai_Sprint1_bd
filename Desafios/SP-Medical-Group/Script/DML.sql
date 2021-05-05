@@ -1,6 +1,12 @@
 USE SPMedicalGroup;
 GO
 
+INSERT INTO TipoUsuario			(TipoUsuario)
+VALUES							('Administrador'),
+								('Médico'),
+								('Paciente');
+GO
+
 INSERT INTO Especialidades		(Nome)
 VALUES							('Acupuntura'),
 								('Anestesiologia'),
@@ -21,17 +27,18 @@ VALUES							('Acupuntura'),
 								('Psiquiatria');
 GO
 
-INSERT INTO Usuario				(Email, Senha)
-VALUES							('ligia@gmail.com', 'Ligia123'),
-								('alexandre@gmail.com', 'Alexandre123'),
-								('fernando@gmail.com', 'Fernando123'),
-								('henrique@gmail.com', 'Henrique123'),
-								('joao@hotmail.com', 'João123'),
-								('bruno@gmail.com', 'Bruno123'),
-								('mariana@outlook.com', 'Mariana123'),
-								('ricardo.lemos@spmedicalgroup.com.br', 'RicardoL123'),
-								('roberto.possarle@spmedicalgroup.com.br', 'RicardoP123'),
-								('helena.souza@spmedicalgroup.com.br', 'HelenaS123');
+INSERT INTO Usuario				(IdTipoUsuario, Email, Senha)
+VALUES							( 1, 'adm@gmail.com', 'adm123'),
+								( 2, 'helena.souza@spmedicalgroup.com.br', 'HelenaS123'),
+								( 2, 'roberto.possarle@spmedicalgroup.com.br', 'RicardoP123'),
+								( 2, 'ricardo.lemos@spmedicalgroup.com.br', 'RicardoL123'),
+								( 3, 'ligia@gmail.com', 'Ligia123'),
+								( 3, 'alexandre@gmail.com', 'Alexandre123'),
+								( 3, 'fernando@gmail.com', 'Fernando123'),
+								( 3, 'henrique@gmail.com', 'Henrique123'),
+								( 3,  'joao@hotmail.com', 'João123'),
+								( 3,  'bruno@gmail.com', 'Bruno123'),
+								( 3, 'mariana@outlook.com', 'Mariana123');
 GO
 
 INSERT INTO Clinica				(Clinica, CNPJ, RazaoSocial, Endereco)

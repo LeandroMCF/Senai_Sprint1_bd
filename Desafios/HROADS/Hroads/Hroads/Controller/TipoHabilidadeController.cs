@@ -17,8 +17,9 @@ namespace Hroads.Controllers
     [ApiController]
     public class TipoHabilidadeController : ControllerBase
     {
-        ITipoHabilidadeRepository _tipoHabilidadeRepository { get; set; }
-        private TipoHabilidadeController()
+        private ITipoHabilidadeRepository _tipoHabilidadeRepository { get; set; }
+
+        public TipoHabilidadeController()
         {
             _tipoHabilidadeRepository = new TipoHabilidadeRepository();
         }

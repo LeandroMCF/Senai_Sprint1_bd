@@ -2,7 +2,9 @@ USE SPMedicalGroup;
 GO
 
 --Teste
-SELECT * FROM Usuario;
+SELECT TipoUsuario.TipoUsuario FROM Usuario
+INNER JOIN TipoUsuario
+ON Usuario.IdTipoUsuario = TipoUsuario.IdTipoUsuario;
 
 SELECT * FROM Clinica;
 
@@ -56,3 +58,6 @@ GO
 --Idade
 SELECT dbo.Idade('Ligia')AS [Nome]
 --FimIdade
+
+SELECT * FROM Prontuario
+Where CPF = '94839859000';

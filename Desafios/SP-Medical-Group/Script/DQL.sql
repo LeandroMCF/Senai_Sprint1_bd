@@ -4,9 +4,17 @@ GO
 USE SPMedicalGroup;
 GO
 
+CREATE TABLE TipoUsuario
+(
+	IdTipoUsuario			INT PRIMARY KEY IDENTITY,
+	TipoUsuario				VARCHAR(250)UNIQUE NOT NULL 
+)
+GO
+
 CREATE TABLE Usuario
 (
 	IdUsuario				INT PRIMARY KEY IDENTITY,
+	IdTipoUsuario			INT FOREIGN KEY REFERENCES TipoUsuario (IdTipoUsuario),
 	Email					VARCHAR(200) NOT NULL,
 	Senha					VARCHAR(200) NOT NULL,
 );
